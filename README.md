@@ -1,7 +1,7 @@
 # About me
 
 I have mixed experience of combining Information technology and supply chain. I am currently a
-Microsoft Certified Azure Data Science Associate with high domain knowledge on supply chain
+Microsoft Certified Azure Data Scientist Associate with high domain knowledge on supply chain
 activities gained from both work and studies. I have the ability to analyse problems and translate
 them into mathematical models and applications, thus predicting future events with machine learning
 and with the ability to prescribe solutions with operations research and supply chain techniques.
