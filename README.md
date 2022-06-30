@@ -6,6 +6,8 @@ activities gained from both work and studies. I have the ability to analyse prob
 them into mathematical models and applications, thus predicting future events with machine learning
 and with the ability to prescribe solutions with operations research and supply chain techniques.
 
+[contact me](https://www.linkedin.com/in/diego-arinze-uchendu-1970188b/)
+
 # Projects
 
 ## [1_Operationalizing Machine Learning](https://github.com/Aduzona/Microsoft-Azure-ML-Projects/blob/master/1_Optimizing_an_ML_Pipeline_in_Azure)
