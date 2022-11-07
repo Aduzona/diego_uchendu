@@ -12,7 +12,8 @@ and with the ability to prescribe solutions with operations research and supply 
 
 # [1_Operationalizing an AWS Machine Learning(click)](https://github.com/Aduzona/AWS_Operationalize_ML_Project)
 
-![Operationalize AWL ML](https://github.com/Aduzona/AWS_Operationalize_ML_Project/blob/master/screenshots/0_0_introduction-to-operationalizing-machine-learning-on-sagemaker.png)
+![Operationalize AWL ML](images/0_0_introduction-to-operationalizing-machine-learning-on-sagemaker.png)
+
 [source Udacity](https://www.udacity.com/course/aws-machine-learning-engineer-nanodegree--nd189)
 
 In this project, I completed the following steps:
