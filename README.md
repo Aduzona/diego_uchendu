@@ -10,8 +10,21 @@ and with the ability to prescribe solutions with operations research and supply 
 
 # Projects
 
+# [1_Operationalizing an AWS Machine Learning(click)](https://github.com/Aduzona/AWS_Operationalize_ML_Project)
 
-## [1_Build_Deploy and Monitor a Machine Learning workflow for Image Classification(click)](https://github.com/Aduzona/AWS-Machine-Learning-Workflow-Project)
+![Operationalize AWL ML](https://github.com/Aduzona/AWS_Operationalize_ML_Project/blob/master/screenshots/0_0_introduction-to-operationalizing-machine-learning-on-sagemaker.png)
+[source Udacity](https://www.udacity.com/course/aws-machine-learning-engineer-nanodegree--nd189)
+
+In this project, I completed the following steps:
+
+1. Train and deploy a model on Sagemaker, using the most appropriate instances. Set up multi-instance training in Sagemaker notebook.
+2. Adjusted Sagemaker notebooks to perform training and deployment on EC2.
+3. Set up a Lambda function for deployed model. Set up auto-scaling for my deployed endpoint as well as concurrency for my Lambda function.
+4. Ensured that the security on my ML pipeline is set up properly.
+
+[click her for more](https://github.com/Aduzona/AWS_Operationalize_ML_Project)
+
+## [2_Build_Deploy and Monitor a Machine Learning workflow for Image Classification(click)](https://github.com/Aduzona/AWS-Machine-Learning-Workflow-Project)
 
 In this project, you'll be building an image classification model that can automatically detect which kind of vehicle delivery drivers have, in order to route them to the correct loading bay and orders. Assigning delivery professionals who have a bicycle to nearby orders and giving motorcyclists orders that are farther can help Scones Unlimited optimize their operations.
 
@@ -30,7 +43,7 @@ In this project, you’ll use AWS Sagemaker to build an image classification mod
     <li> Step 6: Cleanup cloud resources</li>
 </ol>
 
-## [2_Operationalizing Machine Learning (click)](https://github.com/Aduzona/Microsoft-Azure-ML-Projects/blob/master/1_Optimizing_an_ML_Pipeline_in_Azure)
+## [3_Operationalizing Machine Learning (click)](https://github.com/Aduzona/Microsoft-Azure-ML-Projects/blob/master/1_Optimizing_an_ML_Pipeline_in_Azure)
 
 ![Creating and Optimizing an ML Pipeline](images/Creating_Optimize_ML_Pipeline.png)
 [Image source](udacity.com)
@@ -43,7 +56,7 @@ We seek to create and optimize an ML Pipeline using Bank Marketing dataset by:
 * Optimize using Automated machine learning(AutoML)
 And Compare the results of the 2 methods
 
-## [3_Machine Learning Operations (MLOps)(click)](https://github.com/Aduzona/Microsoft-Azure-ML-Projects/tree/master/2_Operationalizing_Machine_Learning)
+## [4_Machine Learning Operations (MLOps)(click)](https://github.com/Aduzona/Microsoft-Azure-ML-Projects/tree/master/2_Operationalizing_Machine_Learning)
 
 ![Architectural Diagram](images/1_Project_Flow.png)
 The Architectural Diagram provided above starts from Authentication and ends with Documentation.
@@ -54,7 +67,7 @@ This Project aimed at Operationalizing Machine Learning, by applying DevOps prin
 
 
 
-## [4_Predicting mortality by heart failure using Microsoft Azure (click)](https://github.com/Aduzona/Microsoft-Azure-ML-Projects/tree/master/3_Capstone_Project_Azure_ML_Engineer)
+## [5_Predicting mortality by heart failure using Microsoft Azure (click)](https://github.com/Aduzona/Microsoft-Azure-ML-Projects/tree/master/3_Capstone_Project_Azure_ML_Engineer)
 
 ![Project Flow](images/0_capstone-diagram.png)
 
@@ -63,7 +76,7 @@ This Project aimed at Operationalizing Machine Learning, by applying DevOps prin
 I will start by getting the Heart failure dataset into Azure datastore, then create 2 models, one using AutoML and the other using HyperDrive,Compare there performance, Deploy Best Model and Test Model End Point.
 
 
-## [5_Find Donor](https://github.com/Aduzona/Machine_Learning_Projects/tree/master/finding_donors)
+## [6_Find Donor](https://github.com/Aduzona/Machine_Learning_Projects/tree/master/finding_donors)
 
 ### Supervised Learning
 #### Project: Finding Donors for CharityML
@@ -91,7 +104,7 @@ The modified census dataset consists of approximately 32,000 data points, with e
 - `income`: Income Class (<=50K, >50K)
 
 
-## [6_image_classifier_with_tensorflow](https://github.com/Aduzona/image_classifier_with_tensorflow)
+## [7_image_classifier_with_tensorflow](https://github.com/Aduzona/image_classifier_with_tensorflow)
 
 In this udacity project, I developed code for an image classifier built with TensorFlow, then you will convert it into a command line application.
 
