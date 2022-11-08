@@ -1,10 +1,6 @@
 # About me
 
-I have mixed experience of combining Information technology and supply chain. I am currently a
-Microsoft Certified Azure Data Scientist Associate with high domain knowledge on supply chain
-activities gained from both work and studies. I have the ability to analyse problems and translate
-them into mathematical models and applications, thus predicting future events with machine learning
-and with the ability to prescribe solutions with operations research and supply chain techniques.
+I have the ability to translate problems to solutions, from performing different kinds of analysis like descriptive, prescriptive and predictive analytics to deploying Machine learning models in the cloud like AWS and Azure to building software solutions. I am also certified Microsoft Data Scientist Associate; thus, I can manage your model in the cloud. Also, I have good software engineering knowledge like ability to build web applications with scrum and CI/CD principles.
 
 [contact me](https://www.linkedin.com/in/diego-arinze-uchendu-1970188b/)
 
