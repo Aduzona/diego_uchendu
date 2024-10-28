@@ -29,7 +29,26 @@ Microservices
 
 For more details, visit [Build the Backend System for a Car Website] (https://github.com/Aduzona/nd035-C2-Web-Services-and-APIs-Exercises-and-Project-Starter)
 
-## [1_Operationalizing an AWS Machine Learning(click)](https://github.com/Aduzona/AWS_Operationalize_ML_Project)
+## [2_CI_CD_ML_Model_Deployment_using_Flask_and_Docker(click)](https://github.com/Aduzona/CI_CD_ML_Model_Deployment_using_Flask_and_Docker/tree/master)
+
+
+
+![images/Model_Deployment Flow](https://github.com/Aduzona/CI_CD_ML_Model_Deployment_using_Flask_and_Docker/blob/master/images/Model_Deployment.png)
+
+After model training, model should be saved.
+
+But in production environment this processes should occur,
+
+* Live Data
+* Feature Engineering
+* Feature Selection
+* Model Prediction: No model building here, we will use same model we built to make predicition.
+* Prediction
+
+We will be using joblib library to save the model, then we will be using the saved model to deploy it using flask. We will create an API then we will deploy it using Docker.
+
+
+## [3_Operationalizing an AWS Machine Learning(click)](https://github.com/Aduzona/AWS_Operationalize_ML_Project)
 
 ![Operationalize AWL ML](images/0_0_introduction-to-operationalizing-machine-learning-on-sagemaker.png)
 
@@ -44,25 +63,9 @@ In this project, I completed the following steps:
 
 [click her for more](https://github.com/Aduzona/AWS_Operationalize_ML_Project)
 
-## [2_CI_CD_ML_Model_Deployment_using_Flask_and_Docker(click)](https://github.com/Aduzona/CI_CD_ML_Model_Deployment_using_Flask_and_Docker/tree/master)
 
 
-
-[images/Model_Deployment Flow](https://github.com/Aduzona/CI_CD_ML_Model_Deployment_using_Flask_and_Docker/blob/master/images/Model_Deployment.png)
-
-After model training, model should be saved.
-
-But in production environment this processes should occur,
-
-* Live Data
-* Feature Engineering
-* Feature Selection
-* Model Prediction: No model building here, we will use same model we built to make predicition.
-* Prediction
-
-We will be using joblib library to save the model, then we will be using the saved model to deploy it using flask. We will create an API then we will deploy it using Docker.
-
-## [3_Build_Deploy and Monitor a Machine Learning workflow for Image Classification(click)](https://github.com/Aduzona/AWS-Machine-Learning-Workflow-Project)
+## [4_Build_Deploy and Monitor a Machine Learning workflow for Image Classification(click)](https://github.com/Aduzona/AWS-Machine-Learning-Workflow-Project)
 
 In this project, you'll be building an image classification model that can automatically detect which kind of vehicle delivery drivers have, in order to route them to the correct loading bay and orders. Assigning delivery professionals who have a bicycle to nearby orders and giving motorcyclists orders that are farther can help Scones Unlimited optimize their operations.
 
@@ -81,7 +84,7 @@ In this project, you’ll use AWS Sagemaker to build an image classification mod
     <li> Step 6: Cleanup cloud resources</li>
 </ol>
 
-## [4_Operationalizing Machine Learning (click)](https://github.com/Aduzona/Microsoft-Azure-ML-Projects/blob/master/1_Optimizing_an_ML_Pipeline_in_Azure)
+## [5_Operationalizing Machine Learning (click)](https://github.com/Aduzona/Microsoft-Azure-ML-Projects/blob/master/1_Optimizing_an_ML_Pipeline_in_Azure)
 
 ![Creating and Optimizing an ML Pipeline](images/Creating_Optimize_ML_Pipeline.png)
 [Image source](udacity.com)
