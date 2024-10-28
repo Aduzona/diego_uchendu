@@ -1,12 +1,35 @@
 # About me
 
-I have the ability to translate problems to solutions, from performing different kinds of analysis like descriptive, prescriptive and predictive analytics to deploying Machine learning models in the cloud like AWS and Azure to building software solutions. I am also certified Microsoft Data Scientist Associate; thus, I can manage your model in the cloud. Also, I have good software engineering knowledge like ability to build web applications with scrum and CI/CD principles.
+I am a versatile software engineer with strong skills in data science, DevOps, cloud management, and data science. I specialize in
+ building Predictive web applications and microservices using Flask, Spring Boot, and JavaScript, adhering to SCRUM
+ and CI/CD principles. Experienced in infrastructure automation, I utilize tools like Docker, Kubernetes and Gitlab CI, to
+ streamline development workflows and manage AWS resources. Additionally, I have contributed to
+ data-driven solutions, creating dashboards and extracting data using Python and SQL. My expertise includes
+ monitoring assets and sensors and developing data visualization applications. I have a strong educational
+ background with master's degrees in Operations Research and Analytics, paired with a passion for machine learning
+ and predictive analytics.
 
 [contact me](https://www.linkedin.com/in/diego-arinze-uchendu-1970188b/)
 
 # Projects
 
-# [1_Operationalizing an AWS Machine Learning(click)](https://github.com/Aduzona/AWS_Operationalize_ML_Project)
+## [1_Build the Backend System for a Car Website(click)](https://github.com/Aduzona/nd035-C2-Web-Services-and-APIs-Exercises-and-Project-Starter)
+
+In this project, I used my skills with Spring Boot, APIs, documentation, and testing to implement a Vehicles API that serves as an endpoint to track vehicle inventory. While the primary Vehicles API will perform CRUD operations (Create, Read, Update and Delete) related to vehicle details like make, model, color, etc., it will need to consume data from other APIs as well regarding location and pricing data. You will implement a RESTful API for the Vehicles API, as well as converting a Pricing Service API to a microservice.
+
+By the end of this project, you'll have an application that can communicate with other services and be able to be viewed and used through Swagger-based API documentation.
+
+I used Intellij, and I prefare that each of the microservice are opened in separate intellij IDE.
+
+Microservices
+
+* Location Service Code
+* Price Service Code
+* Vehicles API Code
+
+For more details, visit [Build the Backend System for a Car Website] (https://github.com/Aduzona/nd035-C2-Web-Services-and-APIs-Exercises-and-Project-Starter)
+
+## [1_Operationalizing an AWS Machine Learning(click)](https://github.com/Aduzona/AWS_Operationalize_ML_Project)
 
 ![Operationalize AWL ML](images/0_0_introduction-to-operationalizing-machine-learning-on-sagemaker.png)
 
@@ -21,7 +44,25 @@ In this project, I completed the following steps:
 
 [click her for more](https://github.com/Aduzona/AWS_Operationalize_ML_Project)
 
-## [2_Build_Deploy and Monitor a Machine Learning workflow for Image Classification(click)](https://github.com/Aduzona/AWS-Machine-Learning-Workflow-Project)
+## [2_CI_CD_ML_Model_Deployment_using_Flask_and_Docker(click)](https://github.com/Aduzona/CI_CD_ML_Model_Deployment_using_Flask_and_Docker/tree/master)
+
+
+
+[images/Model_Deployment Flow](https://github.com/Aduzona/CI_CD_ML_Model_Deployment_using_Flask_and_Docker/blob/master/images/Model_Deployment.png)
+
+After model training, model should be saved.
+
+But in production environment this processes should occur,
+
+* Live Data
+* Feature Engineering
+* Feature Selection
+* Model Prediction: No model building here, we will use same model we built to make predicition.
+* Prediction
+
+We will be using joblib library to save the model, then we will be using the saved model to deploy it using flask. We will create an API then we will deploy it using Docker.
+
+## [3_Build_Deploy and Monitor a Machine Learning workflow for Image Classification(click)](https://github.com/Aduzona/AWS-Machine-Learning-Workflow-Project)
 
 In this project, you'll be building an image classification model that can automatically detect which kind of vehicle delivery drivers have, in order to route them to the correct loading bay and orders. Assigning delivery professionals who have a bicycle to nearby orders and giving motorcyclists orders that are farther can help Scones Unlimited optimize their operations.
 
@@ -40,7 +81,7 @@ In this project, you’ll use AWS Sagemaker to build an image classification mod
     <li> Step 6: Cleanup cloud resources</li>
 </ol>
 
-## [3_Operationalizing Machine Learning (click)](https://github.com/Aduzona/Microsoft-Azure-ML-Projects/blob/master/1_Optimizing_an_ML_Pipeline_in_Azure)
+## [4_Operationalizing Machine Learning (click)](https://github.com/Aduzona/Microsoft-Azure-ML-Projects/blob/master/1_Optimizing_an_ML_Pipeline_in_Azure)
 
 ![Creating and Optimizing an ML Pipeline](images/Creating_Optimize_ML_Pipeline.png)
 [Image source](udacity.com)
@@ -53,7 +94,7 @@ We seek to create and optimize an ML Pipeline using Bank Marketing dataset by:
 * Optimize using Automated machine learning(AutoML)
 And Compare the results of the 2 methods
 
-## [4_Machine Learning Operations (MLOps)(click)](https://github.com/Aduzona/Microsoft-Azure-ML-Projects/tree/master/2_Operationalizing_Machine_Learning)
+## [Machine Learning Operations (MLOps)(click)](https://github.com/Aduzona/Microsoft-Azure-ML-Projects/tree/master/2_Operationalizing_Machine_Learning)
 
 ![Architectural Diagram](images/1_Project_Flow.png)
 The Architectural Diagram provided above starts from Authentication and ends with Documentation.
@@ -64,7 +105,7 @@ This Project aimed at Operationalizing Machine Learning, by applying DevOps prin
 
 
 
-## [5_Predicting mortality by heart failure using Microsoft Azure (click)](https://github.com/Aduzona/Microsoft-Azure-ML-Projects/tree/master/3_Capstone_Project_Azure_ML_Engineer)
+## [Predicting mortality by heart failure using Microsoft Azure (click)](https://github.com/Aduzona/Microsoft-Azure-ML-Projects/tree/master/3_Capstone_Project_Azure_ML_Engineer)
 
 ![Project Flow](images/0_capstone-diagram.png)
 
@@ -73,7 +114,7 @@ This Project aimed at Operationalizing Machine Learning, by applying DevOps prin
 I will start by getting the Heart failure dataset into Azure datastore, then create 2 models, one using AutoML and the other using HyperDrive,Compare there performance, Deploy Best Model and Test Model End Point.
 
 
-## [6_Find Donor](https://github.com/Aduzona/Machine_Learning_Projects/tree/master/finding_donors)
+## [Find Donor](https://github.com/Aduzona/Machine_Learning_Projects/tree/master/finding_donors)
 
 ### Supervised Learning
 #### Project: Finding Donors for CharityML
@@ -101,7 +142,7 @@ The modified census dataset consists of approximately 32,000 data points, with e
 - `income`: Income Class (<=50K, >50K)
 
 
-## [7_image_classifier_with_tensorflow](https://github.com/Aduzona/image_classifier_with_tensorflow)
+## [image_classifier_with_tensorflow](https://github.com/Aduzona/image_classifier_with_tensorflow)
 
 In this udacity project, I developed code for an image classifier built with TensorFlow, then you will convert it into a command line application.
 
