@@ -33,7 +33,7 @@ For more details, visit [Build the Backend System for a Car Website] (https://gi
 
 
 
-![images/Model_Deployment Flow](https://github.com/Aduzona/CI_CD_ML_Model_Deployment_using_Flask_and_Docker/blob/master/images/Model_Deployment.png)
+![images/Model_Deployment Flow](images/Model_Deployment.png)
 
 After model training, model should be saved.
 
