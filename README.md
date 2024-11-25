@@ -13,7 +13,27 @@ I am a versatile software engineer with strong skills in data science, DevOps, c
 
 # Projects
 
-## [1_Build the Backend System for a Car Website(click)](https://github.com/Aduzona/nd035-C2-Web-Services-and-APIs-Exercises-and-Project-Starter)
+## [1_Angular_Frontend and Springboot Backend GitLab CICD, EKS](https://gitlab.com/aduzona/webapps_cicd_aws)
+
+
+### **Application Overview**
+
+This is a small application where users can add, update, and delete car brands. It uses an **Angular** frontend and a **Spring Boot** backend, demonstrating **DevOps principles** with **GitLab**. However, the GitLab CI pipeline is currently non-functional due to disconnection.
+
+---
+
+### **Technologies Used**
+- **Frontend**: Angular  
+- **Backend**: Spring Boot  
+- **Containerization**: Docker  
+- **Orchestration**: Kubernetes  
+- **Version Control & CI/CD**: GitLab CI, GitLab Container Registry  
+- **Cloud Services**: AWS EKS (Elastic Kubernetes Service), AWS ECR (Elastic Container Registry)  
+- **Other Tools**: GitLab, ECR  
+- **Additional Technologies**: etc.
+
+
+## [2_Build the Backend System for a Car Website(click)](https://github.com/Aduzona/nd035-C2-Web-Services-and-APIs-Exercises-and-Project-Starter)
 
 In this project, I used my skills with Spring Boot, APIs, documentation, and testing to implement a Vehicles API that serves as an endpoint to track vehicle inventory. While the primary Vehicles API will perform CRUD operations (Create, Read, Update and Delete) related to vehicle details like make, model, color, etc., it will need to consume data from other APIs as well regarding location and pricing data. You will implement a RESTful API for the Vehicles API, as well as converting a Pricing Service API to a microservice.
 
@@ -29,7 +49,7 @@ Microservices
 
 For more details, visit [Build the Backend System for a Car Website](https://github.com/Aduzona/nd035-C2-Web-Services-and-APIs-Exercises-and-Project-Starter)
 
-## [2_CI_CD_ML_Model_Deployment_using_Flask_and_Docker(click)](https://github.com/Aduzona/CI_CD_ML_Model_Deployment_using_Flask_and_Docker/tree/master)
+## [3_CI_CD_ML_Model_Deployment_using_Flask_and_Docker(click)](https://github.com/Aduzona/CI_CD_ML_Model_Deployment_using_Flask_and_Docker/tree/master)
 
 
 
@@ -48,7 +68,7 @@ But in production environment this processes should occur,
 We will be using joblib library to save the model, then we will be using the saved model to deploy it using flask. We will create an API then we will deploy it using Docker.
 
 
-## [3_Operationalizing an AWS Machine Learning(click)](https://github.com/Aduzona/AWS_Operationalize_ML_Project)
+## [4_Operationalizing an AWS Machine Learning(click)](https://github.com/Aduzona/AWS_Operationalize_ML_Project)
 
 ![Operationalize AWL ML](images/0_0_introduction-to-operationalizing-machine-learning-on-sagemaker.png)
 
@@ -65,7 +85,7 @@ In this project, I completed the following steps:
 
 
 
-## [4_Build_Deploy and Monitor a Machine Learning workflow for Image Classification(click)](https://github.com/Aduzona/AWS-Machine-Learning-Workflow-Project)
+## [5_Build_Deploy and Monitor a Machine Learning workflow for Image Classification(click)](https://github.com/Aduzona/AWS-Machine-Learning-Workflow-Project)
 
 In this project, you'll be building an image classification model that can automatically detect which kind of vehicle delivery drivers have, in order to route them to the correct loading bay and orders. Assigning delivery professionals who have a bicycle to nearby orders and giving motorcyclists orders that are farther can help Scones Unlimited optimize their operations.
 
@@ -84,7 +104,7 @@ In this project, you’ll use AWS Sagemaker to build an image classification mod
     <li> Step 6: Cleanup cloud resources</li>
 </ol>
 
-## [5_Operationalizing Machine Learning (click)](https://github.com/Aduzona/Microsoft-Azure-ML-Projects/blob/master/1_Optimizing_an_ML_Pipeline_in_Azure)
+## [Operationalizing Machine Learning (click)](https://github.com/Aduzona/Microsoft-Azure-ML-Projects/blob/master/1_Optimizing_an_ML_Pipeline_in_Azure)
 
 ![Creating and Optimizing an ML Pipeline](images/Creating_Optimize_ML_Pipeline.png)
 [Image source](udacity.com)
