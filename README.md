@@ -21,10 +21,6 @@ This project demonstrates the creation, deployment, and testing of a microservic
 
 Also Included is Frontend Angular and Typescript
 
-[Code links](https://github.com/orgs/udemy-dev-withK8s-AWS-codedecode/repositories)
-
-View our Google Slides presentation: [click here to visit presentation](https://docs.google.com/presentation/d/10yM2esLSyXUrY0qOuR9-JfoXwm9UEMRbVYDnAC9-fVM/edit?usp=sharing)
-
 ### Building Backend Microservice Application
 
 * Set Up Eureka Server First.
