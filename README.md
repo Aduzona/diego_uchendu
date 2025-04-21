@@ -13,7 +13,36 @@ I am a versatile software engineer with strong skills in data science, DevOps, c
 
 # Projects
 
-## [1_Angular_Frontend and Springboot Backend GitLab CICD, EKS](https://gitlab.com/aduzona/webapps_cicd_aws)
+## [1_Build_and_deploy_end_to_en_Spring_boot_Angular_Microservices](https://github.com/Aduzona/1_Build_and_deploy_end_to_end)
+
+### Introduction
+
+This project demonstrates the creation, deployment, and testing of a microservices-based application using several modern development and deployment tools. The application consists of a **Restaurant Listing** microservice, **User** Microservice, **Food Catalogue** Microservice, **Order** Microservice and an **Eureka server** for service discovery. The project uses Spring Boot for building the services, MySQL as the database, and various cloud-native and DevOps tools for deployment.
+
+Also Included is Frontend Angular and Typescript
+
+[Code links](https://github.com/orgs/udemy-dev-withK8s-AWS-codedecode/repositories)
+
+View our Google Slides presentation: [click here to visit presentation](https://docs.google.com/presentation/d/10yM2esLSyXUrY0qOuR9-JfoXwm9UEMRbVYDnAC9-fVM/edit?usp=sharing)
+
+### Building Backend Microservice Application
+
+* Set Up Eureka Server First.
+  * Use Spring Initializr
+  * Dependencies
+    * Eureka Server
+* Then Create Restaurant Listing Microservices:
+  * mapstruct used to map your entities to DTOs and DTOs to entities because in real world you will never play with entities.
+  * Use spring initializr
+  * Dependencies:
+    * Spring Web
+    * Lombak
+    * Spring Data JPA
+    * MySQL Driver
+    * Eureka Discovery Client
+    * We will add mapstruct manually.
+
+## [2_Angular_Frontend and Springboot Backend GitLab CICD, EKS](https://gitlab.com/aduzona/webapps_cicd_aws)
 
 
 ### **Application Overview**
@@ -33,7 +62,7 @@ This is a small application where users can add, update, and delete car brands. 
 - **Additional Technologies**: etc.
 
 
-## [2_Build the Backend System for a Car Website(click)](https://github.com/Aduzona/nd035-C2-Web-Services-and-APIs-Exercises-and-Project-Starter)
+## [3_Build the Backend System for a Car Website(click)](https://github.com/Aduzona/nd035-C2-Web-Services-and-APIs-Exercises-and-Project-Starter)
 
 In this project, I used my skills with Spring Boot, APIs, documentation, and testing to implement a Vehicles API that serves as an endpoint to track vehicle inventory. While the primary Vehicles API will perform CRUD operations (Create, Read, Update and Delete) related to vehicle details like make, model, color, etc., it will need to consume data from other APIs as well regarding location and pricing data. You will implement a RESTful API for the Vehicles API, as well as converting a Pricing Service API to a microservice.
 
@@ -49,7 +78,7 @@ Microservices
 
 For more details, visit [Build the Backend System for a Car Website](https://github.com/Aduzona/nd035-C2-Web-Services-and-APIs-Exercises-and-Project-Starter)
 
-## [3_CI_CD_ML_Model_Deployment_using_Flask_and_Docker(click)](https://github.com/Aduzona/CI_CD_ML_Model_Deployment_using_Flask_and_Docker/tree/master)
+## [4_CI_CD_ML_Model_Deployment_using_Flask_and_Docker(click)](https://github.com/Aduzona/CI_CD_ML_Model_Deployment_using_Flask_and_Docker/tree/master)
 
 
 
@@ -68,7 +97,7 @@ But in production environment this processes should occur,
 We will be using joblib library to save the model, then we will be using the saved model to deploy it using flask. We will create an API then we will deploy it using Docker.
 
 
-## [4_Operationalizing an AWS Machine Learning(click)](https://github.com/Aduzona/AWS_Operationalize_ML_Project)
+## [5_Operationalizing an AWS Machine Learning(click)](https://github.com/Aduzona/AWS_Operationalize_ML_Project)
 
 ![Operationalize AWL ML](images/0_0_introduction-to-operationalizing-machine-learning-on-sagemaker.png)
 
@@ -85,7 +114,7 @@ In this project, I completed the following steps:
 
 
 
-## [5_Build_Deploy and Monitor a Machine Learning workflow for Image Classification(click)](https://github.com/Aduzona/AWS-Machine-Learning-Workflow-Project)
+## [6_Build_Deploy and Monitor a Machine Learning workflow for Image Classification(click)](https://github.com/Aduzona/AWS-Machine-Learning-Workflow-Project)
 
 In this project, you'll be building an image classification model that can automatically detect which kind of vehicle delivery drivers have, in order to route them to the correct loading bay and orders. Assigning delivery professionals who have a bicycle to nearby orders and giving motorcyclists orders that are farther can help Scones Unlimited optimize their operations.
 
