@@ -1,13 +1,6 @@
 # About me
 
-I am a versatile software engineer with strong skills in data science, DevOps, cloud management, and data science. I specialize in
- building Predictive web applications and microservices using Flask, Spring Boot, and JavaScript, adhering to SCRUM
- and CI/CD principles. Experienced in infrastructure automation, I utilize tools like Docker, Kubernetes and Gitlab CI, to
- streamline development workflows and manage AWS resources. Additionally, I have contributed to
- data-driven solutions, creating dashboards and extracting data using Python and SQL. My expertise includes
- monitoring assets and sensors and developing data visualization applications. I have a strong educational
- background with master's degrees in Operations Research and Analytics, paired with a passion for machine learning
- and predictive analytics.
+Software Engineer & DevOps Specialist with 4+ years of experience building and scaling backend services and cloud infrastructure. At Paessler GmbH, developed microservice-based monitoring applications using Python and TypeScript/Node.js, while implementing comprehensive CI/CD pipelines with Docker, Kubernetes, Helm, and GitLab. Expert in AWS infrastructure automation using Ansible and Terraform, with proven ability to extract and analyze complex data from systems like Splunk and ClickHouse. Recognized for exceptional analytical problem-solving, independently delivering high-quality solutions, and demonstrating resilience in high-pressure situations. Strong foundation in data engineering, infrastructure-as-code, and full-stack development, with additional expertise in machine learning operations and cloud deployments across AWS and Azure platforms.
 
 [contact me](https://www.linkedin.com/in/diego-arinze-uchendu-1970188b/)
 
@@ -53,6 +46,7 @@ A secure, scalable payslip extraction system using **AI (Azure OpenAI GPT-4)** t
 | Structured Output| Azure OpenAI GPT-4 with JSON |Met|
 
 **Authentication / SSO Requirements**
+
 |Requirement| Implementation|Status|
 |----------|---------------|------|
 | OpenID Connect| Implemented via MSAL library|Met|
@@ -80,6 +74,7 @@ A secure, scalable payslip extraction system using **AI (Azure OpenAI GPT-4)** t
 
 
 **Functionality Requirements**
+
 |Requirement | Implementation | Status|
 |-------------|----------------|--------|
 |Minimal UI: secure login| Microsoft Entra ID login with AuthButton component|  Met|
@@ -92,6 +87,7 @@ A secure, scalable payslip extraction system using **AI (Azure OpenAI GPT-4)** t
 
 
 **Other Requirements**
+
 | Requirement|Implementation|Status|
 |-----------|---------------|------|
 |Diagrams| Multiple architecture diagrams provided using Google diagrams|Met| 
@@ -101,6 +97,7 @@ A secure, scalable payslip extraction system using **AI (Azure OpenAI GPT-4)** t
 
 
 **Azure Services Selction**
+
 |Service| Justification| 
 |---|-------|
 | Container Apps| Serverless containers, simple deployment for this time period| 
