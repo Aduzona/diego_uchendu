@@ -15,7 +15,7 @@ I am a versatile software engineer with strong skills in data science, DevOps, c
 
 
 
-## [1_Payslip Extraction Service Next.js_Node.js_Typescript_Azure OpenAI]()
+## [1_Payslip Extraction Service Next.js_Node.js_Typescript_Azure OpenAI](https://gitlab.com/aduzona/payslip-extraction-service)
 
 A secure, scalable payslip extraction system using **AI (Azure OpenAI GPT-4)** to automatically extract structured data from German payslip PDFs.
 
