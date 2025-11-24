@@ -13,7 +13,109 @@ I am a versatile software engineer with strong skills in data science, DevOps, c
 
 # Projects
 
-## [1_Build_and_deploy_end_to_en_Spring_boot_Angular_Microservices](https://github.com/Aduzona/1_Build_and_deploy_end_to_end)
+
+
+## [1_Payslip Extraction Service Next.js_Node.js_Typescript_Azure OpenAI]()
+
+A secure, scalable payslip extraction system using **AI (Azure OpenAI GPT-4)** to automatically extract structured data from German payslip PDFs.
+
+### Overview
+
+**Technologies:**
+
+- **Frontend:** Next.js, React, TypeScript, Tailwind CSS
+- **Backend:** Node.js, Express, TypeScript
+- **Authentication:** Microsoft Entra ID (OAuth 2.0)
+- **AI:** Azure OpenAI GPT-4
+- **Storage:** Azure Blob Storage
+- **Database:** Azure Cosmos DB (NoSQL)
+- **Secrets:** Azure Key Vault
+- **Deployment:** Docker, Azure Container Apps
+- **Infrastructure as a Code:** Terraform
+
+**Key Features:**
+
+* **Secure Authentication** - Microsoft login (SSO)  
+* **AI-Powered Extraction** - GPT-4 understands German payslips  
+* **Complete Audit Trail** - Every action logged  
+* **Scalable Architecture** - Handles 1-1000+ users  
+  *  **Role-Based Access** - User permissions  
+  * **Persistent Storage** - PDFs in Blob Storage, data in Cosmos DB
+ 
+
+**Architecture Requirements**
+
+|Requirement| Implementation|Status|
+|----------|---------------|------|
+|Multiple containers| Web UI + Extraction Service + Cosmos DB| Met|
+|All TypeScript| Both services 100% TypeScript| Met| 
+| Data schema defined| Complete payslip schema in `types/payslip.types.ts`| Met| 
+| Structured Output| Azure OpenAI GPT-4 with JSON |Met|
+
+**Authentication / SSO Requirements**
+|Requirement| Implementation|Status|
+|----------|---------------|------|
+| OpenID Connect| Implemented via MSAL library|Met|
+|Azure Entra ID| Full integration with token validation | Met| 
+| UI enforces auth| Protected routes with `ProtectedRoute` component|Met| 
+| API enforces auth| JWT validation middleware| Met| 
+| Identity propagation| JWT passed service-to-service, user info in headers| Met|
+
+**Local Dev & Orchestration Requirements**
+
+| Requirement | Implementation | Status |
+|-------------|----------------|--------|
+| **docker-compose** | `docker-compose.yml` with all services | Met |
+| **Single command** | `docker-compose up` | Met |
+| **Sample data** | Included German payslip PDF | Met |
+
+
+**Cloud Deployment (Azure) Requirements**
+
+| Requirement | Implementation | Status |
+|-------------|----------------|--------|
+| **Terraform** | Complete infrastructure as code in `infrastructure/terraform/` | Met |
+| **One command deploy** | `./deploy.sh` script (build -> push -> deploy) | Met |
+| **Secrets via Key Vault** | Most secrets stored in Azure Key Vault | Met |
+
+
+**Functionality Requirements**
+|Requirement | Implementation | Status|
+|-------------|----------------|--------|
+|Minimal UI: secure login| Microsoft Entra ID login with AuthButton component|  Met|
+| Minimal UI: view payslips| Upload form with `UploadForm.tsx` component| Met| 
+| Minimal UI: view structured JSON| Display component `PayslipDisplay.tsx` with formatted data|  Met| 
+|Minimal API: secure endpoints| `POST /api/extract`, GET `/api/files/*` with JWT validation| Met | 
+| Minimal API: structured data| Returns `PayslipData` interface with all fields |Met|
+| Input validation & error handling| File type/size validation, try-catch blocks, error messages| Met|
+
+
+
+**Other Requirements**
+| Requirement|Implementation|Status|
+|-----------|---------------|------|
+|Diagrams| Multiple architecture diagrams provided using Google diagrams|Met| 
+|Schema decision| German payslip schema with justification|Met|
+|Database choice| Cosmos DB (NoSQL) with justification| Met| 
+| Azure services| Azure services with justification|Met|
+
+
+**Azure Services Selction**
+|Service| Justification| 
+|---|-------|
+| Container Apps| Serverless containers, simple deployment for this time period| 
+| Container Registry| It is azure's main registry for containers| 
+| Cosmos DB| This supports the JSON structured schema and its fast| 
+| Blob Storage| Cost-effective file storage as I use PDF| 
+| Key Vault| Centralized secrets management | 
+| Azure OpenAI| GPT-4o supports German language| 
+
+
+
+
+
+
+## [2_Build_and_deploy_end_to_en_Spring_boot_Angular_Microservices](https://github.com/Aduzona/1_Build_and_deploy_end_to_end)
 
 ### Introduction
 
@@ -38,7 +140,7 @@ Also Included is Frontend Angular and Typescript
     * Eureka Discovery Client
     * We will add mapstruct manually.
 
-## [2_Angular_Frontend and Springboot Backend GitLab CICD, EKS](https://gitlab.com/aduzona/webapps_cicd_aws)
+## [3_Angular_Frontend and Springboot Backend GitLab CICD, EKS](https://gitlab.com/aduzona/webapps_cicd_aws)
 
 
 ### **Application Overview**
@@ -58,7 +160,7 @@ This is a small application where users can add, update, and delete car brands. 
 - **Additional Technologies**: etc.
 
 
-## [3_Build the Backend System for a Car Website(click)](https://github.com/Aduzona/nd035-C2-Web-Services-and-APIs-Exercises-and-Project-Starter)
+## [4_Build the Backend System for a Car Website(click)](https://github.com/Aduzona/nd035-C2-Web-Services-and-APIs-Exercises-and-Project-Starter)
 
 In this project, I used my skills with Spring Boot, APIs, documentation, and testing to implement a Vehicles API that serves as an endpoint to track vehicle inventory. While the primary Vehicles API will perform CRUD operations (Create, Read, Update and Delete) related to vehicle details like make, model, color, etc., it will need to consume data from other APIs as well regarding location and pricing data. You will implement a RESTful API for the Vehicles API, as well as converting a Pricing Service API to a microservice.
 
@@ -74,7 +176,7 @@ Microservices
 
 For more details, visit [Build the Backend System for a Car Website](https://github.com/Aduzona/nd035-C2-Web-Services-and-APIs-Exercises-and-Project-Starter)
 
-## [4_CI_CD_ML_Model_Deployment_using_Flask_and_Docker(click)](https://github.com/Aduzona/CI_CD_ML_Model_Deployment_using_Flask_and_Docker/tree/master)
+## [5_CI_CD_ML_Model_Deployment_using_Flask_and_Docker(click)](https://github.com/Aduzona/CI_CD_ML_Model_Deployment_using_Flask_and_Docker/tree/master)
 
 
 
@@ -93,7 +195,7 @@ But in production environment this processes should occur,
 We will be using joblib library to save the model, then we will be using the saved model to deploy it using flask. We will create an API then we will deploy it using Docker.
 
 
-## [5_Operationalizing an AWS Machine Learning(click)](https://github.com/Aduzona/AWS_Operationalize_ML_Project)
+## [6_Operationalizing an AWS Machine Learning(click)](https://github.com/Aduzona/AWS_Operationalize_ML_Project)
 
 ![Operationalize AWL ML](images/0_0_introduction-to-operationalizing-machine-learning-on-sagemaker.png)
 
@@ -110,7 +212,7 @@ In this project, I completed the following steps:
 
 
 
-## [6_Build_Deploy and Monitor a Machine Learning workflow for Image Classification(click)](https://github.com/Aduzona/AWS-Machine-Learning-Workflow-Project)
+## [7_Build_Deploy and Monitor a Machine Learning workflow for Image Classification(click)](https://github.com/Aduzona/AWS-Machine-Learning-Workflow-Project)
 
 In this project, you'll be building an image classification model that can automatically detect which kind of vehicle delivery drivers have, in order to route them to the correct loading bay and orders. Assigning delivery professionals who have a bicycle to nearby orders and giving motorcyclists orders that are farther can help Scones Unlimited optimize their operations.
 
