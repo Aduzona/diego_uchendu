@@ -7,8 +7,56 @@ Software Engineer & DevOps Specialist with 4+ years of experience building and s
 # Projects
 
 
+## [1_Supply Chain Inventory Tracker](https://gitlab.com/aduzona/supply-chain-tracker)
 
-## [1_Payslip Extraction Service Next.js_Node.js_Typescript_Azure OpenAI](https://gitlab.com/aduzona/payslip-extraction-service)
+A full-stack microservices application for tracking inventory across multiple warehouses. Built with modern technologies including Next.js, Node.js, Python Flask, PostgreSQL, and Docker.
+
+### Architecture
+```
+┌──────────────────┐
+│     Frontend     │  Next.js 15 + TypeScript + React
+│     :3000        │  Dashboard, Products, Warehouses, Analytics
+└────────┬─────────┘
+         │
+         ▼
+┌──────────────────┐     ┌──────────────────┐
+│    Inventory     │────▶│    PostgreSQL    │
+│     Service      │     │     Database     │
+│     :3001        │     │     :5433        │
+└────────┬─────────┘     └──────────────────┘
+         │
+         ▼
+┌──────────────────┐
+│    Analytics     │  Python Flask
+│     Service      │  Aggregates inventory data
+│     :5000        │
+└──────────────────┘
+```
+
+### Technologies
+
+| Layer | Technology |
+|-------|------------|
+| Frontend | Next.js 15, React, TypeScript, Tailwind CSS |
+| Backend API | Node.js, Express, TypeScript |
+| Analytics | Python, Flask |
+| Database | PostgreSQL 15 |
+| ORM | Prisma 5 |
+| Containerization | Docker, Docker Compose |
+| CI/CD | GitLab CI/CD |
+
+### Features
+
+- **Dashboard**: Overview of inventory statistics and low stock alerts
+- **Products Management**: Full CRUD operations for products
+- **Warehouse Management**: Track multiple warehouse locations
+- **Analytics**: Stock summaries, low stock alerts, inventory health metrics
+- **Real-time Data**: All data persisted in PostgreSQL database
+- **CI/CD Pipeline**: Automated linting, testing, and Docker builds
+
+
+
+## [2_Payslip Extraction Service Next.js_Node.js_Typescript_Azure OpenAI](https://gitlab.com/aduzona/payslip-extraction-service)
 
 A secure, scalable payslip extraction system using **AI (Azure OpenAI GPT-4)** to automatically extract structured data from German payslip PDFs.
 
@@ -112,7 +160,7 @@ A secure, scalable payslip extraction system using **AI (Azure OpenAI GPT-4)** t
 
 
 
-## [2_Build_and_deploy_end_to_en_Spring_boot_Angular_Microservices](https://github.com/Aduzona/1_Build_and_deploy_end_to_end)
+## [3_Build_and_deploy_end_to_en_Spring_boot_Angular_Microservices](https://github.com/Aduzona/1_Build_and_deploy_end_to_end)
 
 ### Introduction
 
@@ -137,7 +185,7 @@ Also Included is Frontend Angular and Typescript
     * Eureka Discovery Client
     * We will add mapstruct manually.
 
-## [3_Angular_Frontend and Springboot Backend GitLab CICD, EKS](https://gitlab.com/aduzona/webapps_cicd_aws)
+## [4_Angular_Frontend and Springboot Backend GitLab CICD, EKS](https://gitlab.com/aduzona/webapps_cicd_aws)
 
 
 ### **Application Overview**
@@ -157,7 +205,7 @@ This is a small application where users can add, update, and delete car brands. 
 - **Additional Technologies**: etc.
 
 
-## [4_Build the Backend System for a Car Website(click)](https://github.com/Aduzona/nd035-C2-Web-Services-and-APIs-Exercises-and-Project-Starter)
+## [5_Build the Backend System for a Car Website(click)](https://github.com/Aduzona/nd035-C2-Web-Services-and-APIs-Exercises-and-Project-Starter)
 
 In this project, I used my skills with Spring Boot, APIs, documentation, and testing to implement a Vehicles API that serves as an endpoint to track vehicle inventory. While the primary Vehicles API will perform CRUD operations (Create, Read, Update and Delete) related to vehicle details like make, model, color, etc., it will need to consume data from other APIs as well regarding location and pricing data. You will implement a RESTful API for the Vehicles API, as well as converting a Pricing Service API to a microservice.
 
@@ -173,7 +221,7 @@ Microservices
 
 For more details, visit [Build the Backend System for a Car Website](https://github.com/Aduzona/nd035-C2-Web-Services-and-APIs-Exercises-and-Project-Starter)
 
-## [5_CI_CD_ML_Model_Deployment_using_Flask_and_Docker(click)](https://github.com/Aduzona/CI_CD_ML_Model_Deployment_using_Flask_and_Docker/tree/master)
+## [6_CI_CD_ML_Model_Deployment_using_Flask_and_Docker(click)](https://github.com/Aduzona/CI_CD_ML_Model_Deployment_using_Flask_and_Docker/tree/master)
 
 
 
@@ -192,7 +240,7 @@ But in production environment this processes should occur,
 We will be using joblib library to save the model, then we will be using the saved model to deploy it using flask. We will create an API then we will deploy it using Docker.
 
 
-## [6_Operationalizing an AWS Machine Learning(click)](https://github.com/Aduzona/AWS_Operationalize_ML_Project)
+## [7_Operationalizing an AWS Machine Learning(click)](https://github.com/Aduzona/AWS_Operationalize_ML_Project)
 
 ![Operationalize AWL ML](images/0_0_introduction-to-operationalizing-machine-learning-on-sagemaker.png)
 
@@ -209,7 +257,7 @@ In this project, I completed the following steps:
 
 
 
-## [7_Build_Deploy and Monitor a Machine Learning workflow for Image Classification(click)](https://github.com/Aduzona/AWS-Machine-Learning-Workflow-Project)
+## [8_Build_Deploy and Monitor a Machine Learning workflow for Image Classification(click)](https://github.com/Aduzona/AWS-Machine-Learning-Workflow-Project)
 
 In this project, you'll be building an image classification model that can automatically detect which kind of vehicle delivery drivers have, in order to route them to the correct loading bay and orders. Assigning delivery professionals who have a bicycle to nearby orders and giving motorcyclists orders that are farther can help Scones Unlimited optimize their operations.
 
@@ -228,7 +276,7 @@ In this project, you’ll use AWS Sagemaker to build an image classification mod
     <li> Step 6: Cleanup cloud resources</li>
 </ol>
 
-## [Operationalizing Machine Learning (click)](https://github.com/Aduzona/Microsoft-Azure-ML-Projects/blob/master/1_Optimizing_an_ML_Pipeline_in_Azure)
+## [9_Operationalizing Machine Learning (click)](https://github.com/Aduzona/Microsoft-Azure-ML-Projects/blob/master/1_Optimizing_an_ML_Pipeline_in_Azure)
 
 ![Creating and Optimizing an ML Pipeline](images/Creating_Optimize_ML_Pipeline.png)
 [Image source](udacity.com)
@@ -241,7 +289,7 @@ We seek to create and optimize an ML Pipeline using Bank Marketing dataset by:
 * Optimize using Automated machine learning(AutoML)
 And Compare the results of the 2 methods
 
-## [Machine Learning Operations (MLOps)(click)](https://github.com/Aduzona/Microsoft-Azure-ML-Projects/tree/master/2_Operationalizing_Machine_Learning)
+## [10_Machine Learning Operations (MLOps)(click)](https://github.com/Aduzona/Microsoft-Azure-ML-Projects/tree/master/2_Operationalizing_Machine_Learning)
 
 ![Architectural Diagram](images/1_Project_Flow.png)
 The Architectural Diagram provided above starts from Authentication and ends with Documentation.
@@ -252,7 +300,7 @@ This Project aimed at Operationalizing Machine Learning, by applying DevOps prin
 
 
 
-## [Predicting mortality by heart failure using Microsoft Azure (click)](https://github.com/Aduzona/Microsoft-Azure-ML-Projects/tree/master/3_Capstone_Project_Azure_ML_Engineer)
+## [11_Predicting mortality by heart failure using Microsoft Azure (click)](https://github.com/Aduzona/Microsoft-Azure-ML-Projects/tree/master/3_Capstone_Project_Azure_ML_Engineer)
 
 ![Project Flow](images/0_capstone-diagram.png)
 
