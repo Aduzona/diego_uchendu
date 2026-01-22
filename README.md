@@ -99,6 +99,7 @@ Diego Task Manager is a Kanban-style task management application that demonstrat
 ### Tech Stack
 
 #### Cloud & Infrastructure
+
 | Technology | Description |
 |------------|-------------|
 | **Azure AKS** | Managed Kubernetes service |
@@ -107,6 +108,7 @@ Diego Task Manager is a Kanban-style task management application that demonstrat
 | **Terraform** | Infrastructure as Code |
 
 #### Application & Containers
+
 | Technology | Description |
 |------------|-------------|
 | **Docker** | Containerization of microservices |
@@ -117,6 +119,7 @@ Diego Task Manager is a Kanban-style task management application that demonstrat
 | **PostgreSQL** | Relational database |
 
 #### CI/CD & Monitoring
+
 | Technology | Description |
 |------------|-------------|
 | **GitLab CI/CD** | Automated build and deploy pipeline |
