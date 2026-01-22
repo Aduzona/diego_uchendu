@@ -1,13 +1,131 @@
 # About me
 
-Software Engineer & DevOps Specialist with 4+ years of experience building and scaling backend services and cloud infrastructure. At Paessler GmbH, developed microservice-based monitoring applications using Python and TypeScript/Node.js, while implementing comprehensive CI/CD pipelines with Docker, Kubernetes, Helm, and GitLab. Expert in AWS infrastructure automation using Ansible and Terraform, with proven ability to extract and analyze complex data from systems like Splunk, Prometheus, Grafana and ClickHouse. I also have knowledge of Java and Spring Boot through dedicated project work. Recognized for exceptional analytical problem-solving, independently delivering high-quality solutions, and demonstrating resilience in high-pressure situations. Strong foundation in data engineering, infrastructure-as-code, and full-stack development, with additional expertise in machine learning operations and cloud deployments across AWS and Azure platforms.
+Software Engineer & DevOps Specialist with 4+ years of experience building and scaling backend services and cloud infrastructure. At Paessler GmbH, developed microservice-based monitoring applications using Python and TypeScript/Node.js, while implementing comprehensive CI/CD pipelines with Docker, Kubernetes, Helm, and GitLab. Expert in AWS  and Azure infrastructure automation using Ansible and Terraform, with proven ability to extract and analyze complex data from systems like Splunk, Prometheus, Grafana and ClickHouse. I also have knowledge of Java and Spring Boot through dedicated project work. Recognized for exceptional analytical problem-solving, independently delivering high-quality solutions, and demonstrating resilience in high-pressure situations. Strong foundation in data engineering, infrastructure-as-code, and full-stack development, with additional expertise in machine learning operations and cloud deployments across AWS and Azure platforms.
 
 [contact me](https://www.linkedin.com/in/diego-arinze-uchendu-1970188b/)
 
 # Projects
 
+# [1 Task Manager_DevOps_Lifecycle](https://gitlab.com/aduzona/diego-task-manager)
 
-## [1_Supply Chain Inventory Tracker](https://gitlab.com/aduzona/supply-chain-tracker)
+A **production-ready Kanban board** with microservices architecture, deployed on **Azure Kubernetes Service (AKS)**. This project demonstrates the complete DevOps lifecycle.
+
+---
+
+## Table of Contents
+
+- [Project Overview](#-project-overview)
+- [Live Demo](#-live-demo)
+- [Architecture](#-architecture)
+- [Tech Stack](#-tech-stack)
+- [Project Structure](#-project-structure)
+- [Deployment Order](#-deployment-order)
+- [Getting Started](#-getting-started)
+- [Commands](#-commands)
+
+---
+
+## Project Overview
+
+Diego Task Manager is a Kanban-style task management application that demonstrates the following DevOps practices:
+
+- **Infrastructure as Code** with Terraform
+- **Containerization** with Docker
+- **Container Orchestration** with Azure Kubernetes Service
+- **Package Management** with Helm
+- **CI/CD Automation** with GitLab
+- **Monitoring** with Prometheus & Grafana
+
+---
+
+## Live Demo
+
+> **Note:** The live demo runs on Azure AKS and is activated on demand.
+> For access to the live demo, please contact me directly.
+
+| Service | Description |
+|---------|-------------|
+| **Application** | Kanban board with drag & drop |
+| **Grafana Dashboard** | Real-time monitoring of microservices |
+| **GitLab Repository** | https://gitlab.com/aduzona/diego-task-manager |
+
+---
+
+## Architecture
+
+```
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                                 INTERNET                                         │
+│                                     │                                            │
+│                                     ▼                                            │
+│                    ┌────────────────────────────────┐                           │
+│                    │     Azure Load Balancer        │                           │
+│                    │         Public IP              │                           │
+│                    └────────────────┬───────────────┘                           │
+│                                     │                                            │
+│                                     ▼                                            │
+│  ┌──────────────────────────────────────────────────────────────────────────┐  │
+│  │                      NGINX INGRESS CONTROLLER                             │  │
+│  │               Path-based Routing: /api/* vs /*                           │  │
+│  └───────────────────────────┬──────────────────────┬───────────────────────┘  │
+│                              │                      │                           │
+│               /api/*         │                      │  /*                       │
+│                              ▼                      ▼                           │
+│  ┌─────────────────────────────────┐  ┌─────────────────────────────────────┐     │
+│  │      API GATEWAY (Node.js)      │  │      FRONTEND (Next.js)         │     │
+│  │      Express + Rate Limiting    │  │      React + Tailwind CSS       │     │
+│  │           Port: 4000            │  │          Port: 3000             │     │
+│  │          Replicas: 2            │  │          Replicas: 2            │     │
+│  └───────────────┬─────────────────┘  └─────────────────────────────────┘     │
+│                  │                                                              │
+│                  ▼                                                              │
+│  ┌─────────────────────────────────┐  ┌─────────────────────────────────┐     │
+│  │   TASK SERVICE (Python Flask)   │  │      POSTGRESQL (Database)      │     │
+│  │    CRUD Operations + Metrics    │  │  Persistent Volume (Azure Disk) │     │
+│  │         Port: 5000              │──▶│         Port: 5432              │     │
+│  │          Replicas: 2            │  │          Replicas: 1            │     │
+│  └─────────────────────────────────┘  └─────────────────────────────────┘     │
+│                                                                                  │
+│  ┌──────────────────────────────────────────────────────────────────────────┐  │
+│  │                          MONITORING STACK                                 │  │
+│  │    Prometheus (collects /metrics) ──▶ Grafana (visualizes dashboards)   │  │
+│  │    kube-state-metrics                                                    │  │
+│  └──────────────────────────────────────────────────────────────────────────┘  │
+└─────────────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+### Tech Stack
+
+#### Cloud & Infrastructure
+| Technology | Description |
+|------------|-------------|
+| **Azure AKS** | Managed Kubernetes service |
+| **Azure ACR** | Container Registry for Docker images |
+| **Azure Key Vault** | Secure storage for secrets |
+| **Terraform** | Infrastructure as Code |
+
+#### Application & Containers
+| Technology | Description |
+|------------|-------------|
+| **Docker** | Containerization of microservices |
+| **Helm** | Kubernetes package management |
+| **Python Flask** | Backend Task Service |
+| **Node.js Express** | API Gateway |
+| **Next.js React** | Frontend user interface |
+| **PostgreSQL** | Relational database |
+
+#### CI/CD & Monitoring
+| Technology | Description |
+|------------|-------------|
+| **GitLab CI/CD** | Automated build and deploy pipeline |
+| **Prometheus** | Metrics collection |
+| **Grafana** | Monitoring dashboards |
+
+
+
+## [2_Supply Chain Inventory Tracker](https://gitlab.com/aduzona/supply-chain-tracker)
 
 A full-stack microservices application for tracking inventory across multiple warehouses. Built with modern technologies including Next.js, Node.js, Python Flask, PostgreSQL, and Docker.
 
@@ -56,7 +174,7 @@ A full-stack microservices application for tracking inventory across multiple wa
 
 
 
-## [2_Payslip Extraction Service Next.js_Node.js_Typescript_Azure OpenAI](https://gitlab.com/aduzona/payslip-extraction-service)
+## [3_Payslip Extraction Service Next.js_Node.js_Typescript_Azure OpenAI](https://gitlab.com/aduzona/payslip-extraction-service)
 
 A secure, scalable payslip extraction system using **AI (Azure OpenAI GPT-4)** to automatically extract structured data from German payslip PDFs.
 
@@ -160,7 +278,7 @@ A secure, scalable payslip extraction system using **AI (Azure OpenAI GPT-4)** t
 
 
 
-## [3_Build_and_deploy_end_to_en_Spring_boot_Angular_Microservices](https://github.com/Aduzona/1_Build_and_deploy_end_to_end)
+## [4_Build_and_deploy_end_to_en_Spring_boot_Angular_Microservices](https://github.com/Aduzona/1_Build_and_deploy_end_to_end)
 
 ### Introduction
 
@@ -185,7 +303,7 @@ Also Included is Frontend Angular and Typescript
     * Eureka Discovery Client
     * We will add mapstruct manually.
 
-## [4_Angular_Frontend and Springboot Backend GitLab CICD, EKS](https://gitlab.com/aduzona/webapps_cicd_aws)
+## [5_Angular_Frontend and Springboot Backend GitLab CICD, EKS](https://gitlab.com/aduzona/webapps_cicd_aws)
 
 
 ### **Application Overview**
@@ -205,7 +323,7 @@ This is a small application where users can add, update, and delete car brands. 
 - **Additional Technologies**: etc.
 
 
-## [5_Build the Backend System for a Car Website(click)](https://github.com/Aduzona/nd035-C2-Web-Services-and-APIs-Exercises-and-Project-Starter)
+## [6_Build the Backend System for a Car Website(click)](https://github.com/Aduzona/nd035-C2-Web-Services-and-APIs-Exercises-and-Project-Starter)
 
 In this project, I used my skills with Spring Boot, APIs, documentation, and testing to implement a Vehicles API that serves as an endpoint to track vehicle inventory. While the primary Vehicles API will perform CRUD operations (Create, Read, Update and Delete) related to vehicle details like make, model, color, etc., it will need to consume data from other APIs as well regarding location and pricing data. You will implement a RESTful API for the Vehicles API, as well as converting a Pricing Service API to a microservice.
 
@@ -221,7 +339,7 @@ Microservices
 
 For more details, visit [Build the Backend System for a Car Website](https://github.com/Aduzona/nd035-C2-Web-Services-and-APIs-Exercises-and-Project-Starter)
 
-## [6_CI_CD_ML_Model_Deployment_using_Flask_and_Docker(click)](https://github.com/Aduzona/CI_CD_ML_Model_Deployment_using_Flask_and_Docker/tree/master)
+## [7_CI_CD_ML_Model_Deployment_using_Flask_and_Docker(click)](https://github.com/Aduzona/CI_CD_ML_Model_Deployment_using_Flask_and_Docker/tree/master)
 
 
 
@@ -240,7 +358,7 @@ But in production environment this processes should occur,
 We will be using joblib library to save the model, then we will be using the saved model to deploy it using flask. We will create an API then we will deploy it using Docker.
 
 
-## [7_Operationalizing an AWS Machine Learning(click)](https://github.com/Aduzona/AWS_Operationalize_ML_Project)
+## [8_Operationalizing an AWS Machine Learning(click)](https://github.com/Aduzona/AWS_Operationalize_ML_Project)
 
 ![Operationalize AWL ML](images/0_0_introduction-to-operationalizing-machine-learning-on-sagemaker.png)
 
@@ -257,7 +375,7 @@ In this project, I completed the following steps:
 
 
 
-## [8_Build_Deploy and Monitor a Machine Learning workflow for Image Classification(click)](https://github.com/Aduzona/AWS-Machine-Learning-Workflow-Project)
+## [9_Build_Deploy and Monitor a Machine Learning workflow for Image Classification(click)](https://github.com/Aduzona/AWS-Machine-Learning-Workflow-Project)
 
 In this project, you'll be building an image classification model that can automatically detect which kind of vehicle delivery drivers have, in order to route them to the correct loading bay and orders. Assigning delivery professionals who have a bicycle to nearby orders and giving motorcyclists orders that are farther can help Scones Unlimited optimize their operations.
 
@@ -276,7 +394,7 @@ In this project, you’ll use AWS Sagemaker to build an image classification mod
     <li> Step 6: Cleanup cloud resources</li>
 </ol>
 
-## [9_Operationalizing Machine Learning (click)](https://github.com/Aduzona/Microsoft-Azure-ML-Projects/blob/master/1_Optimizing_an_ML_Pipeline_in_Azure)
+## [10_Operationalizing Machine Learning (click)](https://github.com/Aduzona/Microsoft-Azure-ML-Projects/blob/master/1_Optimizing_an_ML_Pipeline_in_Azure)
 
 ![Creating and Optimizing an ML Pipeline](images/Creating_Optimize_ML_Pipeline.png)
 [Image source](udacity.com)
@@ -289,7 +407,7 @@ We seek to create and optimize an ML Pipeline using Bank Marketing dataset by:
 * Optimize using Automated machine learning(AutoML)
 And Compare the results of the 2 methods
 
-## [10_Machine Learning Operations (MLOps)(click)](https://github.com/Aduzona/Microsoft-Azure-ML-Projects/tree/master/2_Operationalizing_Machine_Learning)
+## [11_Machine Learning Operations (MLOps)(click)](https://github.com/Aduzona/Microsoft-Azure-ML-Projects/tree/master/2_Operationalizing_Machine_Learning)
 
 ![Architectural Diagram](images/1_Project_Flow.png)
 The Architectural Diagram provided above starts from Authentication and ends with Documentation.
@@ -300,7 +418,7 @@ This Project aimed at Operationalizing Machine Learning, by applying DevOps prin
 
 
 
-## [11_Predicting mortality by heart failure using Microsoft Azure (click)](https://github.com/Aduzona/Microsoft-Azure-ML-Projects/tree/master/3_Capstone_Project_Azure_ML_Engineer)
+## [12_Predicting mortality by heart failure using Microsoft Azure (click)](https://github.com/Aduzona/Microsoft-Azure-ML-Projects/tree/master/3_Capstone_Project_Azure_ML_Engineer)
 
 ![Project Flow](images/0_capstone-diagram.png)
 
