@@ -6,7 +6,60 @@ Software Engineer & DevOps Specialist with 5+ years of experience building and s
 
 # Projects
 
-# [1 Task Manager_DevOps_Lifecycle](https://gitlab.com/aduzona/diego-task-manager)
+## [1_Signal Analytics Platform](https://gitlab.com/aduzona/signal-analytics-platform)
+
+A **sensor signal processing platform** that ingests, transforms and analyzes signals from multiple protocols (SNMP, HTTP, WMI, MQTT). Two FastAPI microservices run on **Azure Kubernetes Service (AKS)**, with infrastructure fully defined in **Terraform and Ansible** and monitoring through **Prometheus, Grafana and AlertManager**.
+
+### Architecture
+
+                Internet
+                   │
+                   ▼
+          Azure Application Gateway
+                   │
+                   ▼
+          NGINX Ingress Controller
+             │                 │
+             ▼                 ▼
+    Signal Ingestion     Signal Analytics
+    Service (FastAPI)    Service (FastAPI)
+             │                 │
+             └────────┬────────┘
+                      ▼
+       PostgreSQL · Redis · Blob Storage
+                      │
+                      ▼
+   Prometheus ──▶ Grafana · AlertManager ──▶ Slack
+
+   
+### Data Flow
+
+1. **Ingestion:** collectors pull signals from SNMP devices, HTTP endpoints, Windows hosts (WMI) and IoT devices (MQTT)
+2. **Storage:** structured signals go to PostgreSQL, raw payloads to Blob Storage, hot data is cached in Redis
+3. **Analytics:** processors aggregate signals, detect patterns and trigger threshold alerts
+4. **Observability:** both services expose `/metrics`, scraped by Prometheus every 15 seconds
+
+### Tech Stack
+
+| Layer | Technology |
+|-------|------------|
+| Backend | FastAPI (Python 3.11), Pytest |
+| Data | PostgreSQL, Redis, Azure Blob Storage (MinIO locally) |
+| Orchestration | Azure AKS, Helm, NGINX Ingress, HPA |
+| Infrastructure as Code | Terraform modules (AKS, ACR, PostgreSQL, Storage, Network, App Gateway), separate dev/prod environments, remote state in Azure Storage |
+| Configuration | Ansible (bastion hardening, server configuration) |
+| Security | Azure Entra ID (RBAC), NSG, VNet and subnet isolation |
+| CI/CD | GitLab CI/CD (lint, test, build, deploy) |
+| Monitoring | Prometheus, Grafana dashboards, AlertManager → Slack |
+
+### Highlights
+
+- **Two independent microservices** with their own test suites, Dockerfiles and `/metrics` endpoints
+- **Safe deployments:** Helm releases with `--atomic` automatic rollback on failure
+- **Cost-conscious cloud setup:** the full Azure stack is created on demand with Terraform and torn down afterwards
+- **Runs locally for free** on Docker Compose or Minikube, no Azure account needed
+
+# [2 Task Manager_DevOps_Lifecycle](https://gitlab.com/aduzona/diego-task-manager)
 
 A **production-ready Kanban board** with microservices architecture, deployed on **Azure Kubernetes Service (AKS)**. This project demonstrates the complete DevOps lifecycle.
 
@@ -128,7 +181,7 @@ Diego Task Manager is a Kanban-style task management application that demonstrat
 
 
 
-## [2_Supply Chain Inventory Tracker](https://gitlab.com/aduzona/supply-chain-tracker)
+## [3_Supply Chain Inventory Tracker](https://gitlab.com/aduzona/supply-chain-tracker)
 
 A full-stack microservices application for tracking inventory across multiple warehouses. Built with modern technologies including Next.js, Node.js, Python Flask, PostgreSQL, and Docker.
 
@@ -177,7 +230,7 @@ A full-stack microservices application for tracking inventory across multiple wa
 
 
 
-## [3_Payslip Extraction Service Next.js_Node.js_Typescript_Azure OpenAI](https://gitlab.com/aduzona/payslip-extraction-service)
+## [4_Payslip Extraction Service Next.js_Node.js_Typescript_Azure OpenAI](https://gitlab.com/aduzona/payslip-extraction-service)
 
 A secure, scalable payslip extraction system using **AI (Azure OpenAI GPT-4)** to automatically extract structured data from German payslip PDFs.
 
@@ -281,7 +334,7 @@ A secure, scalable payslip extraction system using **AI (Azure OpenAI GPT-4)** t
 
 
 
-## [4_Build_and_deploy_end_to_en_Spring_boot_Angular_Microservices](https://github.com/Aduzona/1_Build_and_deploy_end_to_end)
+## [5_Build_and_deploy_end_to_en_Spring_boot_Angular_Microservices](https://github.com/Aduzona/1_Build_and_deploy_end_to_end)
 
 ### Introduction
 
@@ -306,7 +359,7 @@ Also Included is Frontend Angular and Typescript
     * Eureka Discovery Client
     * We will add mapstruct manually.
 
-## [5_Angular_Frontend and Springboot Backend GitLab CICD, EKS](https://gitlab.com/aduzona/webapps_cicd_aws)
+## [6_Angular_Frontend and Springboot Backend GitLab CICD, EKS](https://gitlab.com/aduzona/webapps_cicd_aws)
 
 
 ### **Application Overview**
@@ -326,7 +379,7 @@ This is a small application where users can add, update, and delete car brands. 
 - **Additional Technologies**: etc.
 
 
-## [6_Build the Backend System for a Car Website(click)](https://github.com/Aduzona/nd035-C2-Web-Services-and-APIs-Exercises-and-Project-Starter)
+## [7_Build the Backend System for a Car Website(click)](https://github.com/Aduzona/nd035-C2-Web-Services-and-APIs-Exercises-and-Project-Starter)
 
 In this project, I used my skills with Spring Boot, APIs, documentation, and testing to implement a Vehicles API that serves as an endpoint to track vehicle inventory. While the primary Vehicles API will perform CRUD operations (Create, Read, Update and Delete) related to vehicle details like make, model, color, etc., it will need to consume data from other APIs as well regarding location and pricing data. You will implement a RESTful API for the Vehicles API, as well as converting a Pricing Service API to a microservice.
 
@@ -342,7 +395,7 @@ Microservices
 
 For more details, visit [Build the Backend System for a Car Website](https://github.com/Aduzona/nd035-C2-Web-Services-and-APIs-Exercises-and-Project-Starter)
 
-## [7_CI_CD_ML_Model_Deployment_using_Flask_and_Docker(click)](https://github.com/Aduzona/CI_CD_ML_Model_Deployment_using_Flask_and_Docker/tree/master)
+## [8_CI_CD_ML_Model_Deployment_using_Flask_and_Docker(click)](https://github.com/Aduzona/CI_CD_ML_Model_Deployment_using_Flask_and_Docker/tree/master)
 
 
 
@@ -361,7 +414,7 @@ But in production environment this processes should occur,
 We will be using joblib library to save the model, then we will be using the saved model to deploy it using flask. We will create an API then we will deploy it using Docker.
 
 
-## [8_Operationalizing an AWS Machine Learning(click)](https://github.com/Aduzona/AWS_Operationalize_ML_Project)
+## [9_Operationalizing an AWS Machine Learning(click)](https://github.com/Aduzona/AWS_Operationalize_ML_Project)
 
 ![Operationalize AWL ML](images/0_0_introduction-to-operationalizing-machine-learning-on-sagemaker.png)
 
@@ -378,7 +431,7 @@ In this project, I completed the following steps:
 
 
 
-## [9_Build_Deploy and Monitor a Machine Learning workflow for Image Classification(click)](https://github.com/Aduzona/AWS-Machine-Learning-Workflow-Project)
+## [10_Build_Deploy and Monitor a Machine Learning workflow for Image Classification(click)](https://github.com/Aduzona/AWS-Machine-Learning-Workflow-Project)
 
 In this project, you'll be building an image classification model that can automatically detect which kind of vehicle delivery drivers have, in order to route them to the correct loading bay and orders. Assigning delivery professionals who have a bicycle to nearby orders and giving motorcyclists orders that are farther can help Scones Unlimited optimize their operations.
 
